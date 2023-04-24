@@ -39,7 +39,7 @@ random.shuffle(labeled_words)
 
 # Dividir la lista en conjunto de entrenamiento (80%) y conjunto de prueba (20%)
 train_set = labeled_words[:int(len(labeled_words) * 0.8)]
-test_set = labeled_words[int(len(labeled_words) * 0.8):]
+test_set = labeled_words[int(len(labeled_words) * 0.2):]
 
 # Definir una función para extraer características de las palabras
 def extract_features(word):
